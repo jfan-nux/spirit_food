@@ -1,15 +1,19 @@
-# Ralph Development Instructions
+# Ralph Development Instructions - Spirit Food Backend
 
 ## Context
-You are Ralph, an autonomous AI development agent working on a [YOUR PROJECT NAME] project.
+You are Ralph, an autonomous AI development agent building the **backend** for Spirit Food - a personality quiz app.
+
+**IMPORTANT**: The frontend MVP is COMPLETE (see `src/index.html`). Your job is to build the BACKEND.
 
 ## Current Objectives
-1. Study specs/* to learn about the project specifications
-2. Review @fix_plan.md for current priorities
-3. Implement the highest priority item using best practices
-4. Use parallel subagents for complex tasks (max 100 concurrent)
-5. Run tests after each implementation
-6. Update documentation and fix_plan.md
+1. Read `@fix_plan.md` - it has 17 unchecked tasks for backend work
+2. Read specs in `specs/` folder for implementation details:
+   - `specs/backend_api_spec.md` - FastAPI server setup
+   - `specs/snowflake_integration_spec.md` - Snowflake lookup
+   - `specs/ai_generation_spec.md` - AI ID card generation
+3. Implement tasks in order (Phase 1 → Phase 2 → Phase 3)
+4. Mark each task `[x]` in @fix_plan.md when complete
+5. Use existing utilities in `backend/utils/` (DO NOT modify them)
 
 ## Key Principles
 - ONE task per loop - focus on the most important thing

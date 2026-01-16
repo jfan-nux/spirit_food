@@ -1,0 +1,17 @@
+# Spirit Food Backend Dependencies
+
+# Web Framework
+fastapi>=0.104.0
+uvicorn>=0.24.0
+pydantic[email]>=2.0.0
+
+# Environment Configuration
+python-dotenv>=1.0.0
+
+# Snowflake Integration
+snowflake-connector-python>=3.0.0
+pandas>=2.0.0
+
+# AI/LLM Integration (Portkey via OpenAI SDK)
+openai>=1.0.0
+portkey-ai>=0.1.0

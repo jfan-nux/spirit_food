@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spirit Food - Discover Your Food Personality</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Email Entry Screen -->
+        <div id="email-screen" class="screen">
+            <h1 class="title">Discover Your Spirit Food</h1>
+            <p class="subtitle">Take a whimsical journey through the DoorDash Dimension</p>
+            <div class="email-form">
+                <input type="email" id="email-input" placeholder="your.name@doordash.com" />
+                <button id="start-btn" class="primary-button">Begin Quest</button>
+            </div>
+            <p class="skip-text">
+                <a href="#" id="skip-email">Skip email and start quiz</a>
+            </p>
+        </div>
+
+        <!-- Quiz Screen -->
+        <div id="quiz-screen" class="screen hidden">
+            <div class="quiz-header">
+                <div class="progress-bar">
+                    <div id="progress-fill" class="progress-fill"></div>
+                </div>
+                <span id="scene-number" class="scene-number">Scene 1 of 9</span>
+            </div>
+            <div class="quiz-content">
+                <p id="story-text" class="story-text"></p>
+                <div id="story-image-container" class="image-container">
+                    <img id="story-image" src="" alt="Adventure scene" />
+                </div>
+                <div id="choices" class="choices"></div>
+            </div>
+        </div>
+
+        <!-- Result Screen -->
+        <div id="result-screen" class="screen hidden">
+            <div class="id-card">
+                <div class="id-card-header">
+                    <h2>SPIRIT FOOD ID</h2>
+                </div>
+                <div class="id-card-title">
+                    <h3 id="spirit-food-title"></h3>
+                </div>
+                <div class="id-card-portrait">
+                    <div id="food-portrait" class="food-portrait"></div>
+                </div>
+                <div class="id-card-content">
+                    <div class="id-section">
+                        <h4>TITLE</h4>
+                        <p id="food-title-name"></p>
+                    </div>
+                    <div class="id-section">
+                        <h4>STRENGTHS</h4>
+                        <ul id="strengths-list"></ul>
+                    </div>
+                    <div class="id-section">
+                        <h4>WEAKNESSES</h4>
+                        <ul id="weaknesses-list"></ul>
+                    </div>
+                    <div class="id-section">
+                        <h4>SIGNATURE QUOTES</h4>
+                        <div id="quotes-list" class="quotes"></div>
+                    </div>
+                    <div class="id-section alignment-section">
+                        <h4>ALIGNMENT</h4>
+                        <div class="alignment-bar">
+                            <span id="time-label">Time:</span>
+                            <div class="bar-container">
+                                <div id="time-bar" class="bar"></div>
+                            </div>
+                            <span id="time-percent"></span>
+                        </div>
+                        <div class="alignment-bar">
+                            <span id="adventure-label">Adventure:</span>
+                            <div class="bar-container">
+                                <div id="adventure-bar" class="bar"></div>
+                            </div>
+                            <span id="adventure-percent"></span>
+                        </div>
+                    </div>
+                    <div class="id-section">
+                        <h4>HIDDEN TALENT</h4>
+                        <p id="hidden-talent"></p>
+                    </div>
+                    <div class="id-section">
+                        <h4>PEER REVIEWS</h4>
+                        <div id="peer-reviews" class="peer-reviews"></div>
+                    </div>
+                </div>
+                <div class="id-card-footer">
+                    <button id="share-btn" class="secondary-button">Share Result</button>
+                    <button id="retake-btn" class="secondary-button">Retake Quiz</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/gameData.js"></script>
+    <script src="js/scoring.js"></script>
+    <script src="js/game.js"></script>
+</body>
+</html>
